@@ -6,28 +6,26 @@ import {
   IonTitle,
   IonToolbar,
 } from '@ionic/react'
-import './Tab3.css'
+import './Tab1.css'
 
-const Tab3: React.FC = () => {
+const LoginPage: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 3</IonTitle>
+          <IonTitle>Login</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Tab 3</IonTitle>
+            <IonTitle size="large">Login Page</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonButton routerLink="/login" routerDirection="back">
-          Go to Login
-        </IonButton>
+        <IonButton routerLink="/tabs/tab1">Tab 1</IonButton>
       </IonContent>
     </IonPage>
   )
 }
 
-export default Tab3
+export default LoginPage
